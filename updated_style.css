@@ -1,0 +1,259 @@
+body {
+    background: linear-gradient(135deg, #1e1e2f, #2c2c54);
+    background-color: #111111;
+    margin: 0;
+    padding: 0;
+}
+
+.imgred {
+    width: 100px;
+}
+
+.img {
+    top: 5px;
+    left: 5px;
+    align-self: flex-start;
+}
+
+.toppan {
+    height: 100px;
+    background-color: #FFA07A;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.txtlogo {
+    position: fixed;
+    left: 100px;
+    top: 20px;
+    color: aliceblue;
+    font-family: Helvetica;
+    font-size: 20px;
+}
+
+.righttxt {
+    position: fixed;
+    top: 45px;
+    left: 125px;
+}
+
+.buttons {
+    text-align: center;
+    padding-top: 0;
+    margin: auto;
+    display: flex; /* Используем flexbox */
+    justify-content: center; /* Центрируем элементы по горизонтали */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons button {
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 90px;
+    height: 40px;
+    font-size: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.buttons button:hover {
+    background-color: #e76d54;
+    transform: scale(1.05);
+    background-color: #303030;
+    border-radius: 25px;
+    color: antiquewhite;
+}
+
+.button {
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #d8815f;
+    border: none;
+    border-radius: 25px;
+
+}
+
+.buttlog button,
+.registerbutt,
+.loginbutt,
+.leftpan button {
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #d8815f;
+    border: none;
+    border-radius: 25px;
+    width: 90px;
+    height: 40px;
+    font-size: 20px;
+}
+
+.buttlog button:hover {
+    background-color: #e76d54;
+    transform: scale(1.05);
+    background-color: #303030;
+    border-radius: 25px;
+    color: antiquewhite;
+}
+
+.buttlog {
+    margin-right: 25px;
+}
+
+.buttons button:active,
+.buttlog button:active,
+.register:active {
+    background-color: #505050;
+}
+
+.log,
+.regpan {
+    position: fixed;
+    width: 300px;
+    height: 250px;
+    right: -350px;
+    background-color: #e78057;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: right 1s ease;
+}
+
+.txtlog {
+    color: antiquewhite;
+    text-align: center;
+}
+
+.logpass,
+.regpass {
+    margin-left: 5px;
+}
+
+.logpass input,
+.regpass input {
+    margin-top: 5px;
+    background-color: #ffa886;
+    border: 1px solid #ccc; border-radius: 8px;
+    border-radius: 5px;
+}
+
+.forpass {
+    color: antiquewhite;
+}
+
+.forpass:hover {
+    color: #909090;
+}
+
+.register:hover,
+.leftpan button:hover {
+    background-color: #e76d54;
+    transform: scale(1.05);
+    background-color: #303030;
+    border-radius: 25px;
+    color: antiquewhite;
+}
+
+.register {
+    background-color: #ffb395;
+    margin-left: 200px;
+}
+
+.leftpan {
+    background-color: #e78057;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 100%;
+    width: 300px;
+}
+
+.leftpan button {
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 5px;
+    background-color: #ffb395;
+    width: 290px;
+}
+
+.leftpan button:active {
+    background-color: #505050;
+}
+
+.content {
+    position: absolute;
+    border: 1px solid #e78057;
+    height: 500px;
+    width: 1000px;
+    border-radius: 10px;
+    left: 50%; /* Располагаем блок по горизонтали на 50% ширины страницы */
+    transform: translate(-50%, -50%);
+    top: 40%;
+    background-color: #303030;
+    color: antiquewhite;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.npan {
+    height: 5%;
+    border-bottom: 1px solid #e78057;
+}
+
+body.news {
+    color: antiquewhite;
+}
+
+.dpan {
+    border-bottom: 1px solid #e78057;
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Контейнер для выпадающего контента */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Выпадающий контент */
+.dropdown-content {
+    display: none; /* Скрываем по умолчанию */
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Элементы внутри выпадающего меню */
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Добавляем hover-эффект к элементам меню */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Показываем меню при наведении */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Стили кнопки при наведении */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
